@@ -289,11 +289,13 @@ Return Value:
                 break;
             }
 
-			if (FloppyNumber == 1)
-			{
-				MaxDensity = 360;
-				FloppyDataVersion = 1;
-			}
+            if (FloppyNumber == 1) // B:
+            {
+                MaxDensity = 360;
+                // Setting this to version 1 tells floppy.sys that there's no parameters other than the drive
+                // size to retrieve. We need it to keep its defaults for "360", which are correct for 5.25"
+                FloppyDataVersion = 1;
+            }
 
             if (FloppyDataVersion == CURRENT_FLOPPY_DATA_VERSION) {
                 Length = sizeof(CM_FLOPPY_DEVICE_DATA);
