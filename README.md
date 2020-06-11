@@ -8,6 +8,7 @@ It also contains the changes I made to force B: drive to 5.25" as mentioned in t
 To build:
 
   cd Source\detect\fre
+
   16bitbld
 
 The resulting binary can be found in Source\detect\fre\obj\i386
