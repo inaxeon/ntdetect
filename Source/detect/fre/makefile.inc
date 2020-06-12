@@ -43,7 +43,7 @@ AINC=  -I$(BASEDIR)\public\sdk\inc -I..\i386
 #       ~~~~~~~~~~~~~~~~~~
 
 LINK=link_60
-LIBS=..\i386\long.lib ..\i386\slibce.lib ..\i386\llibce.lib
+LIBS=..\..\..\lib\long.lib ..\..\..\lib\slibce.lib ..\..\..\lib\llibce.lib
 DEF=
 
 
